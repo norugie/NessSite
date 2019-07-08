@@ -10,10 +10,6 @@
 
     $blogs = $site->blogSearchResults($database, $keyword, $schoolContent);
     $resources = $site->resourcesSearchResults($database, $keyword, $schoolContent);
-    $forms = $site->formsSearchResults($database, $keyword, $schoolContent);
-    $dfiles = $site->departmentFormsSearchResults($database, $keyword);
-    $cfiles = $site->curriculumFormsSearchResults($database, $keyword);
-    $boefiles = $site->boardFormsSearchResults($database, $keyword);
     
 ?>
 <div class="col-md-9">
@@ -22,9 +18,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="heading">
-                    <h2>District News</h2>
+                    <h2>School News</h2>
                 </div>
-                <?php if(count($blogs) < 1){ ?><p class="lead">No district news posts found for keyword: <?php echo $keyword; ?></p><?php } ?>
+                <?php if(count($blogs) < 1){ ?><p class="lead">No school news posts found for keyword: <?php echo $keyword; ?></p><?php } ?>
                 <div class="row">
                     <?php foreach($blogs as $blog): ?>
                         <div class="col-lg-3 col-md-4 col-blog-mobile">
@@ -74,62 +70,6 @@
                         </div>
                     <?php endforeach; ?>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- FORMS RESULTS CONTENT -->
-    <section>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="heading">
-                    <h2>District Files</h2>
-                </div>
-                <?php if(count($forms) < 1){ ?><p class="lead">No district files found for keyword: <?php echo $keyword; ?></p><?php } ?>
-                <ul>
-                    <?php foreach($forms as $form): ?>
-                        <li class="lead mb-0"><a href="<?php if($form['link_type'] == 'File'){ echo "/links/"; } echo $form['link_content']; ?>" target="_blank"><?php echo $form['link_name']; ?></a></li>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <div class="heading">
-                    <h2>Board Meeting Packages</h2>
-                </div>
-                <?php if(count($boefiles) < 1){ ?><p class="lead">No board meeting packages found for keyword: <?php echo $keyword; ?></p><?php } ?>
-                <ul>
-                    <?php foreach($boefiles as $boe): ?>
-                        <li class="lead mb-0"><a href="<?php if($boe['link_type'] == 'File'){ echo "/links/"; } echo $boe['link_content']; ?>" target="_blank"><?php echo $boe['link_name']; ?></a></li>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- DEPARTMENT AND CURRICULUM RESULTS CONTENT -->
-    <section>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="heading">
-                    <h2>Department Files</h2>
-                </div>
-                <?php if(count($dfiles) < 1){ ?><p class="lead">No department files found for keyword: <?php echo $keyword; ?></p><?php } ?>
-                <ul>
-                    <?php foreach($dfiles as $df): ?>
-                        <li class="lead mb-0"><a href="<?php if($df['link_type'] == 'File'){ echo "/links/"; } echo $df['link_content']; ?>" target="_blank"><?php echo $df['link_name']; ?></a></li>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <div class="heading">
-                    <h2>Curriculum Files</h2>
-                </div>
-                <?php if(count($cfiles) < 1){ ?><p class="lead">No curriculum files found for keyword: <?php echo $keyword; ?></p><?php } ?>
-                <ul>
-                    <?php foreach($cfiles as $cf): ?>
-                        <li class="lead mb-0"><a href="<?php if($cf['link_type'] == 'File'){ echo "/links/"; } echo $cf['link_content']; ?>" target="_blank"><?php echo $cf['link_name']; ?></a></li>
-                    <?php endforeach; ?>
-                </ul>
             </div>
         </div>
     </section>
