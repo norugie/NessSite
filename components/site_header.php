@@ -42,7 +42,7 @@
         <link rel="stylesheet" href="/css/custom.min.css">
         <link rel="stylesheet" href="/css/responsive-font.min.css">
         <!-- Favicon and apple touch icons-->
-        <link rel="icon" href="/nisgaa-icon.png" type="image/x-icon">
+        <link rel="icon" href="https://webdev.nisgaa.bc.ca/nisgaa-icon.png" type="image/x-icon">
 
         <!-- Tweaks for older IEs-->
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -53,7 +53,7 @@
 
     </head>
     <body>
-        <!-- Page Loader
-        <?php require '../nisgaa/components/page_loader.php'; ?> -->
+        <!-- Page Loader -->
+        <?php require '../nisgaa/components/page_loader.php'; ?>
         <!-- #END# Page Loader -->
         <div id="all" style ="overflow-x: hidden;">
