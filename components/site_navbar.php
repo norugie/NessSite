@@ -7,7 +7,6 @@
     $info = $site->siteInformation($database, $schoolInfo);
     $quick_links = $site->linkList($database, 'Quick Links', $schoolContent);
     $events = $site->eventList($database, $schoolContent);
-    $joblist = $site->jobList($database);
 
 ?>
 
@@ -37,64 +36,8 @@
     <div id="navigation" class="navbar-collapse collapse">
         <ul class="nav navbar-nav ml-auto">
         <li class="nav-item"><a href="/">Home</a></li>
-        <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Our District <b class="caret"></b></a>
-            <ul class="dropdown-menu megamenu">
-            <li>
-                <div class="row">
-                <div class="col-lg-4">
-                    <h5>District Information</h5>
-                    <ul class="list-unstyled mb-3">
-                    <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="/inquiries" class="nav-link">Inquiries</a></li>
-                    <li class="nav-item"><a href="/contacts" class="nav-link">Contact Us</a></li>
-                    </ul>
-                    <h5>Departments</h5>
-                    <ul class="list-unstyled mb-3">
-                    <li class="nav-item"><a href="/department/finance" class="nav-link">Finance</a></li>
-                    <li class="nav-item"><a href="/department/tech" class="nav-link">Information Technology Department</a></li>
-                    <li class="nav-item"><a href="/department/maintenance" class="nav-link">Transportation and Maintenance Department</a></li>
-                    </ul>      
-                </div>
-                <div class="col-lg-4">
-                    <h5>Curriculum</h5>
-                    <ul class="list-unstyled mb-3">
-                    <li class="nav-item"><a href="/curriculum/k12" class="nav-link">K-12 Program</a></li>
-                    <li class="nav-item"><a href="/curriculum/dl" class="nav-link">Distant Learners Program</a></li>
-                    <li class="nav-item"><a href="/curriculum/nlc" class="nav-link">Nisga'a Language and Culture</a></li>
-                    </ul>
-                    <h5>Miscellaneous</h5>
-                    <ul class="list-unstyled mb-3">
-                    <li class="nav-item"><a href="/culture_corner" class="nav-link">Culture Corner</a></li>
-                    <li class="nav-item"><a href="/files" class="nav-link">District Files</a></li>
-                    </ul> 
-                </div>
-                <div class="col-lg-4">
-                    <h5>Governance</h5>
-                    <ul class="list-unstyled mb-3">
-                    <li class="nav-item"><a href="/boe" class="nav-link">Board of Education</a></li>
-                    <li class="nav-item"><a href="/packages" class="nav-link">Board Meeting Packages</a></li>
-                    </ul>
-                    <h5>External Links</h5>
-                    <ul class="list-unstyled mb-3">
-                    <li class="nav-item"><a href="https://www.nisgaanation.ca/" class="nav-link" target="_blank">Nisga'a Lisims Government</a></li>
-                    <li class="nav-item"><a href="http://www.gitlaxtaamiks.com/" class="nav-link" target="_blank">Gitlaxt'aamiks</a></li>
-                    <li class="nav-item"><a href="http://www.nisgaanation.ca/gitwinksihlkw-canyon-city" class="nav-link" target="_blank">Gitwinksihlkw</a></li>
-                    <li class="nav-item"><a href="http://www.laxgaltsap.ca/" class="nav-link" target="_blank">Laxgaltsap</a></li>
-                    <li class="nav-item"><a href="http://www.gingolx.ca/" class="nav-link" target="_blank">Gingolx</a></li>
-                    </ul>
-                </div>
-                </div>
-            </li>
-            </ul>
-        </li>
-        <li class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Schools<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-            <li class="dropdown-item"><a href="https://dev-ness.nisgaa.bc.ca" class="nav-link">NISGA'A ELEMENTARY SECONDARY SCHOOL</a></li>
-            <li class="dropdown-item"><a href="https://dev-ges.nisgaa.bc.ca" class="nav-link">GITWINKSIHLKW ELEMENTARY SCHOOL</a></li>
-            <li class="dropdown-item"><a href="https://dev-aames.nisgaa.bc.ca" class="nav-link">ALVIN A. MCKAY ELEMENTARY SCHOOL</a></li>
-            <li class="dropdown-item"><a href="https://dev-nbes.nisgaa.bc.ca" class="nav-link">NATHAN BARTON ELEMENTARY SCHOOL</a></li>
-            </ul>
-        </li>
+        <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="/inquiries" class="nav-link">Inquiries</a></li>
         <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Resources <b class="caret"></b></a>
             <ul class="dropdown-menu">
             <li class="dropdown-item"><a href="/general_resources" class="nav-link">General Resources</a></li>
@@ -104,8 +47,8 @@
             <li class="dropdown-item"><a href="/parent_resources" class="nav-link">Parent Resources</a></li>
             </ul>
         </li>
-        <li class="nav-item"><a href="/news">District News</a></li>
-        <li class="nav-item"><a href="/careers">Careers</a></li>
+        <li class="nav-item"><a href="/news">School News</a></li>
+        <li class="nav-item"><a href="/contacts" class="nav-link">Contact Us</a></li>
         <li class="nav-item"><a href="#search"><i class="fa fa-search fa-lg"></i><span class="d-inline-block d-md-none">&nbsp;&nbsp;Search</span></a></li>
         </ul>
     </div>

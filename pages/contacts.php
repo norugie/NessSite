@@ -96,5 +96,5 @@
     </section>
 
     <!-- GMAPS -->
-    <?php require 'components/map.php'; ?>
+    <?php require '../nisgaa/components/map.php'; ?>
 </div>
