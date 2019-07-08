@@ -7,7 +7,7 @@
                 <div class="heading">
                     <h2>FREQUENTLY ASKED QUESTIONS</h2>
                 </div>
-                <p class="lead">Need some help? We've put together some commonly asked questions to give you more information about School District no. 92 (Nisga’a).</p>
+                <p class="lead">Need some help? We've put together some commonly asked questions to give you more information about Nisga'a Elementary Secondary School.</p>
                 <p class="lead">If you have a question that you can't find the answer to, please feel free to <a href="/contacts">contact us</a>.</p>
             </div>
         </div>
