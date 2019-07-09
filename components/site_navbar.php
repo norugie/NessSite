@@ -13,6 +13,7 @@
 <!-- Top bar-->
 <?php require '../nisgaa/components/site_topbar.php'; ?>
 <!-- Top bar end-->
+
 <!-- Navbar Start-->
 <header class="nav-holder make-sticky">
 <div id="navbar" role="navigation" class="navbar navbar-expand-lg">
