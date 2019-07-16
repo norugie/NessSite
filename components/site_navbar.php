@@ -11,9 +11,7 @@
 ?>
 
 <!-- Top bar-->
-<div class="embed-responsive" style="height:50px;">
-  <iframe class="embed-responsive-item" src="https://webdev.nisgaa.bc.ca/components/site_topbar.php"></iframe>
-</div>
+<?php require '../nisgaa/components/site_topbar.php'; ?>
 <!-- Top bar end-->
 
 <!-- Navbar Start-->
