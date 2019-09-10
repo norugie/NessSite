@@ -23,7 +23,6 @@
         <ul class="nav navbar-nav ml-auto">
         <li class="nav-item"><a href="/">Home</a></li>
         <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="/inquiries" class="nav-link">Inquiries</a></li>
         <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Resources <b class="caret"></b></a>
             <ul class="dropdown-menu">
             <li class="dropdown-item"><a href="/general_resources" class="nav-link">General Resources</a></li>
