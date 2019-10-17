@@ -36,7 +36,4 @@
             </div>
         </div>
     </section>
-
-    <!-- GMAPS -->
-    <?php require '../nisgaa/components/map.php'; ?>
 </div>
