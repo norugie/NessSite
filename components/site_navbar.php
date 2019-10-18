@@ -23,7 +23,8 @@
         <ul class="nav navbar-nav ml-auto">
         <li class="nav-item"><a href="/">Home</a></li>
         <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-        <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Resources <b class="caret"></b></a>
+        <!-- Reactivate when decided to allow schools to have their own resource pages -->
+        <!-- <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Resources <b class="caret"></b></a>
             <ul class="dropdown-menu">
             <li class="dropdown-item"><a href="/general_resources" class="nav-link">General Resources</a></li>
             <li class="dropdown-item"><a href="/teacher_resources" class="nav-link">Teacher Resources</a></li>
@@ -31,7 +32,7 @@
             <li class="dropdown-item"><a href="/student_resources" class="nav-link">Student Resources</a></li>
             <li class="dropdown-item"><a href="/parent_resources" class="nav-link">Parent Resources</a></li>
             </ul>
-        </li>
+        </li> -->
         <li class="nav-item"><a href="/news">School News</a></li>
         <li class="nav-item"><a href="/contacts" class="nav-link">Contact Us</a></li>
         <li class="nav-item"><a href="#search"><i class="fa fa-search fa-lg"></i><span class="d-inline-block d-md-none">&nbsp;&nbsp;Search</span></a></li>
