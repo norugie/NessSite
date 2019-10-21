@@ -2,7 +2,8 @@
     require '../nisgaa/functions/security_headers.php';
 ?>
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    lang="en" dir="ltr">
     <head profile="http://www.w3.org/1999/xhtml/vocab">
         <meta charset="UTF-8">
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
