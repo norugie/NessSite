@@ -59,13 +59,13 @@
                     <?php foreach($resources as $resource): ?>
                         <div class="col-lg-3 col-md-6 col-blog-mobile">
                             <div class="product d-none d-md-block">
-                                <div class="image"><a href="<?php if($resource['link_type'] == 'File'){ echo "/links/"; } echo $resource['link_content']; ?>" target="_blank"><img src="https://webdev.nisgaa.bc.ca/images/thumbnails/<?php echo $resource['link_thumbnail']; ?>" alt="" class="img-fluid image1" style="max-width: 80% !important;"></a></div>
+                                <div class="image"><a href="<?php if($resource['link_type'] == 'File'){ echo "/links/"; } echo $resource['link_content']; ?>" target="_blank" rel="noreferrer"><img src="https://webdev.nisgaa.bc.ca/images/thumbnails/<?php echo $resource['link_thumbnail']; ?>" alt="" class="img-fluid image1" style="max-width: 80% !important;"></a></div>
                                 <div class="text">
-                                    <h3 class="h5"><a href="<?php if($resource['link_type'] == 'File'){ echo "/links/"; } echo $resource['link_content']; ?>" target="_blank"><?php echo $resource['link_name']; ?></a></h3>
+                                    <h3 class="h5"><a href="<?php if($resource['link_type'] == 'File'){ echo "/links/"; } echo $resource['link_content']; ?>" target="_blank" rel="noreferrer"><?php echo $resource['link_name']; ?></a></h3>
                                 </div>
                             </div>
                             <ul class="d-block d-md-none d-lg-none">
-                                <li class="lead mb-0"><a href="<?php if($resource['link_type'] == 'File'){ echo "/links/"; } echo $resource['link_content']; ?>" target="_blank"><?php echo $resource['link_name']; ?></a></li>
+                                <li class="lead mb-0"><a href="<?php if($resource['link_type'] == 'File'){ echo "/links/"; } echo $resource['link_content']; ?>" target="_blank" rel="noreferrer"><?php echo $resource['link_name']; ?></a></li>
                             </ul>
                         </div>
                     <?php endforeach; ?>

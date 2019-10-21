@@ -15,7 +15,7 @@
                                 <div class="owl-text-overlay d-none d-sm-block">
                                     <h2 class="owl-title d-none d-md-block"><?php echo $c['carousel_desc']; ?></h2>
                                 </div>
-                                <img class="owl-img" src="https://webdev.nisgaa.bc.ca/images/carousel/<?php echo $c['carousel_name']; ?>">
+                                <img class="owl-img" src="https://webdev.nisgaa.bc.ca/images/carousel/<?php echo $c['carousel_name']; ?>" alt="<?php echo $c['carousel_desc']; ?>">
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -31,7 +31,7 @@
                             <div class="panel-body">
                                 <ul class="nav nav-pills flex-column text-sm">
                                     <?php foreach($quick_links as $ql): ?>
-                                        <li class="nav-item"><a href="<?php if($ql['link_type'] == 'File'){ echo "/links/"; } echo $ql['link_content']; ?>" class="nav-link" target="_blank"><?php echo $ql['link_name']; ?></a></li>
+                                        <li class="nav-item"><a href="<?php if($ql['link_type'] == 'File'){ echo "/links/"; } echo $ql['link_content']; ?>" class="nav-link" target="_blank" rel="noreferrer"><?php echo $ql['link_name']; ?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </div>
