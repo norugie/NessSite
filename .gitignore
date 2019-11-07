@@ -1,0 +1,16 @@
+# Ignore files
+/images/posts/*
+/images/posts/media/*
+/images/thumbnails/*
+/images/carousel/*
+/feed.php
+
+# Folder exceptions
+!/images/posts/.gitkeep
+!/images/posts/media/.gitkeep
+!/images/thumbnails/.gitkeep
+!/images/carousel/.gitkeep
+
+# File Exceptions
+!/images/thumbnails/post_thumbnail.jpg
+
