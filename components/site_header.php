@@ -19,17 +19,17 @@
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://dev-ness.nisgaa.bc.ca">
+        <meta property="og:url" content="https://ness.nisgaa.bc.ca">
         <meta property="og:title" content="Nisga'a Elementary Secondary School">
         <meta property="og:description" content="Nisga'a Elementary Secondary School)">
-        <meta property="og:image" content="https://webdev.nisgaa.bc.ca/images/thumbnails/post_thumbnail.jpg">
+        <meta property="og:image" content="https://www.nisgaa.bc.ca/images/thumbnails/post_thumbnail.jpg">
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://dev-ness.nisgaa.bc.ca">
+        <meta property="twitter:url" content="https://ness.nisgaa.bc.ca">
         <meta property="twitter:title" content="Nisga'a Elementary Secondary School">
         <meta property="twitter:description" content="Nisga'a Elementary Secondary School">
-        <meta property="twitter:image" content="https://webdev.nisgaa.bc.ca/images/thumbnails/post_thumbnail.jpg">
+        <meta property="twitter:image" content="https://www.nisgaa.bc.ca/images/thumbnails/post_thumbnail.jpg">
 
         <!-- Bootstrap CSS-->
         <link rel="stylesheet" href="/plugins/bootstrap-v4/css/bootstrap.min.css">
