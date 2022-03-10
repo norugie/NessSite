@@ -22,12 +22,44 @@
                 </div>
                 <div class="row text-center">
                     <?php foreach($contacts as $contact): ?>
+                        <?php if($contact['position'] === "Principal" || $contact['position'] === "Vice-Principal" || $contact['position'] === "Vice Principal"){ ?>
                         <div class="col-md-4 justify-content">
                             <div class="box-simple">
                                 <h3 class="h4"><?php echo $contact['firstname'] . " " . $contact['lastname']; ?><br><span style="font-size:15px;"><?php echo $contact['position']?></span></h3>
                                 <p style="color: #000!important;">
                                     <strong>Email Address: </strong><a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a><br>
                                     <strong>Phone Number: </strong> <?php echo $contact['phone']; ?>
+                                </p>
+                            </div>
+                        </div>
+                        <?php } ?>
+                    <?php endforeach; ?>
+                    <?php foreach($contacts as $contact): ?>
+                        <?php if($contact['position'] != "Principal" && $contact['position'] != "Vice-Principal" && $contact['position'] != "Vice Principal"){ ?>
+                        <div class="col-md-4 justify-content">
+                            <div class="box-simple">
+                                <h3 class="h4"><?php echo $contact['firstname'] . " " . $contact['lastname']; ?><br><span style="font-size:15px;"><?php echo $contact['position']?></span></h3>
+                                <p style="color: #000!important;">
+                                    <strong>Email Address: </strong><a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a><br>
+                                    <strong>Phone Number: </strong> <?php echo $contact['phone']; ?>
+                                </p>
+                            </div>
+                        </div>
+                        <?php } ?>
+                    <?php endforeach; ?>
+                </div>
+                <div class="heading">
+                    <h3>Teachers</h3>
+                </div>
+                <div class="row text-center">
+                    <?php $teachers = $site->teacherList($database, $schoolContent); ?>
+                    <?php foreach($teachers as $teacher): ?>
+                        <div class="col-md-4 justify-content">
+                            <div class="box-simple">
+                                <h3 class="h4"><?php echo $teacher['firstname'] . " " . $teacher['lastname']; ?><br><span style="font-size:15px;"><?php echo $teacher['position']?></span></h3>
+                                <p style="color: #000!important;">
+                                    <strong>Email Address: </strong><a href="mailto:<?php echo $teacher['email']; ?>"><?php echo $teacher['email']; ?></a><br>
+                                    <strong>Phone Number: </strong> <?php echo $teacher['phone']; ?>
                                 </p>
                             </div>
                         </div>
